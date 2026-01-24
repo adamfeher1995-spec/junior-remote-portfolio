@@ -1,62 +1,81 @@
-/* Alap body beállítások */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+/* Alapok */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
-/* Container középre, max szélesség */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container */
 .container {
-    max-width: 800px;
-    margin: 0 auto; /* középre */
+    max-width: 900px;
+    margin: 0 auto;
     padding: 20px;
 }
 
 /* Header */
 header {
-    text-align: center;
+    background-color: #2c3e50;
+    color: #fff;
     padding: 40px 0;
+    text-align: center;
 }
 
 header h1 {
-    margin: 0;
     font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
 header h2 {
-    margin: 5px 0 0;
-    font-weight: normal;
-    color: #555;
+    font-weight: 400;
+    font-size: 1.2em;
 }
 
-/* Kártya stílus */
+/* Kártyák */
 .card {
     background-color: #fff;
-    padding: 20px;
+    padding: 25px;
     margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
 }
 
-/* Bemutatkozás kártya speciális */
-.about p {
-    line-height: 1.6;   /* szellősebb sorok */
-    font-size: 1.05em;  /* kicsit nagyobb, olvashatóbb szöveg */
-    color: #333;
+.card:hover {
+    transform: translateY(-5px);
 }
 
 /* Projektek lista */
 .projects ul {
-    list-style: disc;
+    list-style-type: disc;
     padding-left: 20px;
+}
+
+.projects li {
+    margin: 10px 0;
 }
 
 /* Footer */
 footer {
-    text-align: center;
+    background-color: #2c3e50;
+    color: #fff;
     padding: 20px 0;
-    font-size: 0.9em;
-    color: #777;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Reszponzív */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2em;
+    }
+    header h2 {
+        font-size: 1em;
+    }
 }
