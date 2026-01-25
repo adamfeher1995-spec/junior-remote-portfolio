@@ -1,8 +1,12 @@
-console.log("Hello Worlds");
+document.addEventListener("DOMContentLoaded", function() {
+    console.log("Hello Worlds");
 
-let button = document.getElementById("myButton");
-let message = document.getElementById("message");
+    // DOM elemek kikeresése
+    let button = document.getElementById("myButton");
+    let message = document.getElementById("message");
 
-button.addEventListener("click", function() {
-    message.textContent = "Sikeresen rákattintottál a gombra!";
+    // Gomb kattintás esemény
+    button.addEventListener("click", function() {
+        message.textContent = "Sikeresen rákattintottál a gombra!";
+    });
 });
